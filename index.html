@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike</title>
+  <link rel="stylesheet" href="home.css">
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<style>
+.edit{
+  background-color:white;
+  color: aliceblue;
+}
+
+.container-fluid a{
+  color: white;
+}
+
+.dropdown-menu li a {
+    color:black;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* body {
+  background: #fff;
+  color: #000;
+} */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 40px;
+  background: #f4f4f4;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #000;
+}
+ /* .{
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+} */
+
+.btn:hover {
+  background: #333;
+}
+
+.nav-links li a:hover{
+    border-bottom: 2px solid whitesmoke;
+    color: gray
+}
+
+.hero-img img {
+  width: 50%;
+  max-width: 300px;
+margin-left:500px;
+}
+
+/* Products */
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.product-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.btn.small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  background:rgb(235, 235, 235);
+  color: black;
+  padding: 30px 40px;
+  text-align: center;
+  height: 80px;
+}
+
+.footer .socials a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.logo  a{
+    list-style-type: none;
+    color: white;
+}
+
+.hero-img>img{
+    width: 100%;
+    height: 110%;
+
+}
+
+
+.img{background-color: aqua;
+
+}
+
+
+
+
+
+/* .{
+  background-color: #111;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+} */
+
+ 
+  /* background-color: blue; */
+
+
+.lol{
+  display: flex;
+  justify-content: space-between;
+}
+.lol marquee{
+  margin-left: 50px;
+  margin-right: 50px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.lol h3{
+   display: flex;
+  justify-content: space-between;
+  
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+  <!-- <marquee behavior="" direction="" > Shoes All Categorious Availale from adult to kids </marquee> -->
+
+
+  <!-- <div class="sss">
+    <div class="logo-container">
+      <div class="logo-icon">👟</div>
+      <div class="logo-text">WALK <span>AND</span> WEAR</div>
+    </div>
+
+  </div> -->
+  
+
+<div class="lol">
+  
+<marquee behavior="" direction="">Free Shipping Available Over Rs. 1500 Order. </marquee>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">WALK AND WEAR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            shoes Categorious
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="man.html">Man</a></li>
+            <li><a class="dropdown-item" href="women.html">Women</a></li>
+            <li><a class="dropdown-item" href="kid.html">kid</a></li>
+            <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">WALK AND WEAR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            shoes Categorious
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="man.html">Man</a></li>
+            <li><a class="dropdown-item" href="women.html">Women</a></li>
+            <li><a class="dropdown-item" href="kid.html">kid</a></li>
+            <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+
+
+
+
+
+  <!-- <div class="header">
+    <div class="maaz">
+      <h2>Walk&Wear</h2>
+
+
+    </div>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="man.html">Men</a></li>
+        <li><a href="women.html">women</a></li>
+        <li><a href="kid.html">Kid</a></li>
+
+        <li><a href="sport.html">Sport</a></li>
+
+
+      </ul>
+    </div>
+  </div> -->
+
+
+
+<!-- 
+  <div class="hello">
+    <div class="mazz">
+
+
+    </div> -->
+
+
+
+
+    <!-- <div class="bar">
+      <ul>
+
+        <li><a href="man.html">Men</a></li>
+        <li><a href="women.html">women</a></li>
+        <li><a href="kid.html">Kid</a></li>
+
+        <li><a href="sport.html">Sport</a></li>
+      </ul>
+    </div>
+  </div> -->
+
+
+  <!-- <div class="hero-section">
+    <h1>"Fashion That Moves With You."</h1>
+
+
+
+  </div>  -->
+
+
+ 
+
+
+
+
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="banner3.png" class="d-block w-100"height="550px"  alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="banner 4.png" class="d-block w-100" height="550px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="banner - Copy.webp" class="d-block w-100" height="550px" alt="...">
+      </div>
+       <div class="carousel-item">
+        <img src="gif.jpeg" class="d-block w-100" height="550px" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+
+
+<!-- <section class="hero">
+    <div class="hero-text">
+      <h1>Step into the Future</h1>
+      <p>Explore the latest Nike shoes engineered for performance and style.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div class="hero-img">
+      <img src="hh.jpeg" alt="Nike Shoes">
+    </div>
+  </section> -->
+<div class="animate__animated animate__backInRight">
+  <section class="products">
+    <h2>All Products</h2>
+    <div class="product-grid">  
+      <div class="product-card">
+        <img src="leader.jpeg" alt="Shoe 1">
+        <h3>Loafers</h3>
+        <p></p>
+        <p>Rs 2,599,00</p>
+        <a href="payment.html" class=""></a>
+      </div>
+      
+
+        <div class="product-card">
+        <img src="chapal.jpeg" alt="Shoe 1">
+        <h3>slipper</h3>
+        <p></p>
+         
+        
+        <p>Rs 1,599,00</p>
+        <a href="payment.html" class="."></a>
+      </div>
+      
+
+  <div class="product-card">
+        <img src="best.jpeg" alt="Shoe 1">
+        <h3>Formal Lace-Ups</h3>
+        <p>Rs 7,999,00</p>
+        <a href="payment.html" class=".">.</a>
+      </div>
+ <!-- start -->
+ 
+ 
+
+        <div class="product-card">
+          
+        <img src="kid1.jpeg" alt="Shoe 1">
+        
+        <h3>Casual Canvas</h3>
+        <p>1,299,00</p>
+        <a href="payment.html" class=""></a>
+        
+      </div>
+
+
+
+        <div class="product-card">
+        <img src="kid3.jpeg" alt="Shoe 1">
+        <h3>Formal Sandal</h3>
+        <p>Rs 1,399,00</p>
+        <a href="payment.html" class=""></a>
+      </div>
+
+
+        <div class="product-card">
+        <img src="kid2.jpeg" alt="Shoe 1">
+        <h3>Casual Flip Flop</h3>
+        <p>Rs 500</p>
+        <a href="payment.html" class=""></a>
+      </div>
+
+
+        <div class="product-card">
+        <img src="wo3.jpeg" alt="Shoe 1">
+        <h3>Twisted Strap slipper</h3>
+        <p>Rs 2,800,00</p>
+        <a href="payment.html" class="."></a>
+      </div>
+
+
+        <div class="product-card">
+        <img src="wo4.jpeg" alt="Shoe 1">
+        <h3>Block Heels</h3>
+        <p>Rs 2,899,00</p>
+        <a href="payment.html" class="."></a>
+      </div>
+
+
+
+      <div class="product-card">
+        <img src="sport2.jpeg" alt="Shoe 2">
+        <h3>Lace Fastening Sports Shoes</h3>
+        <p>Rs 9,999,00</p>
+        <a href="payment.html" class="."></a>
+      </div>
+      <div class="product-card">
+        <img src="best 2.jpeg" alt="Shoe 3">
+        <h3>Traditional Peshawaris</h3>
+        <p>Rs 1,599,00</p>
+        <a href="payment.html" class="."></a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+    
+
+
+
+</body>
+</html>
+
+
+
+  <!-- <div class="card-section">
+
+                <div class="card">
+                    <div class="img">
+                        <img src="11.jpeg"">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <p>$400.99</p>
+
+                           </div>
+                </div>
+<div class="card">
+                    <div class="img">
+                        <img src="8.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <br>
+                            <h5> price $400.99</h5>
+
+                           </div>
+                </div>
+<div class="card">
+                    <div class="img">
+                        <img src="9.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="6.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="5.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="4.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="9.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="3.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="2.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="1.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="7.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+<div class="card">
+                    <div class="img">
+                        <img src="project.jpeg" alt="">
+
+                    </div>
+                           <div class="card-section">
+                            <h3>Jordan</h3>
+                            <h5> price $400.99</h5>
+                        </div>
+            </div>
+                      -->
+  <!-- <footer class="nike-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo.png" alt="Nike Logo">
+        <p>Just Do It.</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Men's Shoes</a></li>
+            <li><a href="#">Women's Shoes</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Nike</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Nike, Inc. All rights reserved.</p>
+    </div>
+  </footer> -->
+
+
+
+ <div class="container">
+    <!-- ===== About Section ===== -->
+    <section class="about">
+      <h1>About </h1>
+      <p>
+         <strong></strong>Welcome to Walk and Wear, where fashion meets function.
+Our mission is to bring you stylish, high-quality shoes that support every step you take. From morning walks to evening plans, each design is crafted with premium materials, ergonomic soles, and breathable comfort — so you can look good and feel great every day.
+      </p>
+    </section>
+
+
+
+
+  <footer class="footer">
+    <p>© 2025 WALK AND WEAR, Inc. All Rights Reserved.</p>
+    <div class="socials">
+      <!-- <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a> -->
+    </div>
+  </footer>
+
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ -->
+
+
+
+
+</body>
+
+</html>

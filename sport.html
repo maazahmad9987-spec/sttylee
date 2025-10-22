@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Men's Shoes</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+
+    .dropdown-menu li a{
+    color:black;
+}
+
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color:black;
+  color: #fff;
+  height: 28px;
+  margin: 0px;
+}
+
+.logo a {
+    color: white;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 18px;
+}
+     */
+
+ /* header {
+      background-color: #222;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    } */
+
+
+
+
+    .container-fluid a {
+      color: red;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .shoe-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .shoe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .shoe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .shoe-info {
+      padding: 20px;
+    }
+
+    .shoe-info h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    .shoe-info p {
+      margin: 0;
+      color: #888;
+    }
+
+    .price {
+      color: #000;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+
+
+    .intro {
+      background: #000;
+      color: #fff;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight:bold;
+      transition: 0.3s;
+
+    margin-left:100px;
+
+    }
+
+       /* .intro {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  
+  margin-left: 140px;
+
+} */
+
+.nav-links li a:hover{
+    border-bottom: 2px solid whitesmoke;
+    color: gray
+}
+
+
+
+
+
+.footer {
+    background:rgb(235, 235, 235);
+  color:black;
+  padding: 30px 40px;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+}
+
+.footer .socials a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+    /* footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+    } */
+  </style>
+</head>
+<body>
+
+
+
+
+  
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">WALK AND WEAR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            shoes Categorious
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="man.html">Man</a></li>
+            <li><a class="dropdown-item" href="women.html">Women</a></li>
+            <li><a class="dropdown-item" href="kid.html">kid</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+       <!-- <header class="navbar">
+    <div class="logo">
+        <a href="index.html">WALK AND WEAR</a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        
+         <li><a href="women.html">Women</a></li>
+        
+        <li><a href="man.html">Man</a></li>
+        <li><a href="sport.html">Sports</a></li>
+      </ul>
+    </nav> 
+     <div class="icons">
+      <a href="#">🔍</a>
+      <a href="#">🛒</a>
+    </div> 
+   </header> 
+
+<header>
+  <h1>Men's Shoes Collection</h1>
+</header>  -->
+
+
+<main class="container">
+  <div class="shoe-card">
+    <img src="sport.jpeg" alt="Sneaker 1">
+    <div class="shoe-info">
+      <h2>Mesh Sports Shoes</h2>
+      <p>These athletic shoes are well-suited to everyday exercises, such as light runs and mixed workouts.
+
+They have been made with good quality Mesh material that gives them durability and breathability.
+
+These shoes have a round toe shape and a cushioned insole.
+
+The EVA outsole provides comfort, grip and keeps the shoe light..</p>
+      <p class="price">Rs 7,899,00</p>
+      <a href="payment.html" class="intro
+">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="shoe-card">
+    <img src="sport1.jpeg" alt="Boots 2">
+    <div class="shoe-info">
+      <h2>NRG+ Sneakers</h2>
+      <p>Discover the perfect fusion of performance and style with these HIGH ENERGY kicks!
+
+
+Made with NDURE Jacquard material, which provides optimal breathability and flexibility.
+
+These shoes feature an engineered knit upper, a cushioned footbed with special stability features, a lace-up design, and a rounded toe for improved performance.
+
+A light TPR outsole keeps the shoe light and provides anti-slip resistance..</p>
+      <p class="price">Rs 8,799,00</p>
+      <a href="payment.html" class="intro
+">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="shoe-card">
+    <img src="sport2.jpeg" alt="Loafers 3">
+    <div class="shoe-info">
+      <h2>Lace Fastening Sports Shoes</h2>
+      <p>A solid choice for your everyday training routine!
+
+These shoes have been made with good quality Flyknit material which keeps them light and ensures durability.
+
+They feature a round toe shape, a cushioned insole, and a lace-up style.
+
+The EVA outsole provides comfort, grip and keeps the shoe light..</p>
+      <p class="price">Rs 9,999,00</p>
+           <a href="payment.html" class="intro
+">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="shoe-card">
+    <img src="sport3.jpeg" alt="Sneaker 4">
+    <div class="shoe-info">
+      <h2> Lace-up Athletic Shoes</h2>
+      <p>Comfy and stylish, these shoes will become your favorite this season!
+
+They have been made with good quality Mesh material that gives them durability and breathability.
+
+This pair features a lace-up design and a round toe shape.
+
+A TPR outsole keeps the shoe light and provides anti-slip resistence..</p>
+      <p class="price">Rs4,560</p>
+           <a href="payment.html" class="intro
+">Buy Now</a>
+    </div>
+  </div>
+</main>
+
+
+<footer class="footer">
+    <p>© 2025 WALK AND WEAR, Inc. All Rights Reserved.</p>
+    <div class="socials">
+      <!-- <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a> -->
+    </div>
+  </footer>
+<!-- <footer>
+  &copy; 2025 Men's Shoe Store. All rights reserved.
+
+
+
+</footer> -->
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
